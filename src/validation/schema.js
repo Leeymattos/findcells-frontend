@@ -3,7 +3,7 @@ import { setLocale } from 'yup'
 
 setLocale({
   string:{
-    min: 'Precisa de mais carecteres!',
+    min: 'Precisa de mais caracteres!',
     email: 'Ensira um email válido!',
     matches:'Somente números!'
   }
