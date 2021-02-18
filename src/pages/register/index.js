@@ -61,6 +61,7 @@ export default function Register() {
     data.append('cell_name', values.cell_name)
     data.append('leader_name', values.leader_name)
     data.append('network_color', values.network_color)
+    data.append('day', values.day)
     data.append('schedule', values.schedule)
     data.append('email', values.email)
     data.append('whatsapp', values.whatsapp)
@@ -117,6 +118,7 @@ export default function Register() {
           cell_name: '',
           leader_name: '',
           network_color: '',
+          day: '',
           schedule: '',
           email: '',
           whatsapp: '',
@@ -163,6 +165,14 @@ export default function Register() {
               </div>
               <div className="error">
                 <ErrorMessage name='network_color' />
+              </div>
+
+              <div className="input-container">
+                <label htmlFor="name">Dia da célula:</label>
+                <input className={errors.day && touched.day ? 'input-error' : ''} value={values.day} type="text" name='day' onChange={handleChange} />
+              </div>
+              <div className="error">
+                <ErrorMessage name='day' />
               </div>
 
               <div className="input-container">
