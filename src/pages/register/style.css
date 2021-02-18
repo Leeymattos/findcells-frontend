@@ -1,0 +1,198 @@
+.register-container{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.logo{
+ margin-top: 32px;
+ height: 52px;
+}
+
+form{
+  width: 90%;
+  height: 90%;
+  max-width: 600px;
+  background-color: #eee;
+
+  margin:40px 0;
+
+  padding: 20px;
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.link-form{
+  color:rgb(22, 156, 4);
+}
+
+.title-form{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.inputs-container{
+  padding: 0 40px;
+}
+
+
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.select-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error{
+  text-align: right;
+  color: red;
+  font-weight: 700;
+  font-size: 15px;
+  height: 19px;
+}
+
+
+label{
+  font-weight: 700;
+  font-size: 17px;
+
+}
+
+input,
+select{
+  height: 25px;
+  width: 90%;
+  max-width: 210px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 3px;
+
+  font-weight: 500;
+  font-size: 13px;
+
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.input-error{
+  height: 25px;
+  width: 90%;
+  max-width: 210px;
+
+  border: 2px solid rgb(182, 6, 6);
+  border-radius: 6px;
+
+  padding: 3px;
+
+  font-weight: 500;
+  font-size: 13px;
+
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.label-select{
+  margin-top: 20px;
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+select{
+  margin-top: 20px;
+}
+
+
+.leaflet-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.button-container{
+  text-align: center;
+}
+
+.button-form{
+  width: 100%;
+  max-width: 150px;
+  height: 50px;
+
+  margin: 10px 0;
+
+  text-decoration: none;
+
+  background-color: rgb(22, 156, 4);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  color: white;
+
+  font-weight: bold;
+  font-size: 18px;
+
+  border-radius: 6px;
+  border: 0;
+
+  transition: all .2s;
+}
+
+.button-form:hover,
+.button-form:focus{
+  opacity: 0.9;
+}
+
+
+@media(max-width:605px){
+  .select-container{
+    flex-direction: column;
+  }
+  select{
+    margin-top: 25px;
+  }
+}
+
+
+@media(max-width:470px){
+  .logo{
+    height: 45px;
+  }
+
+  .title-form{
+    font-size: 22px;
+  }
+
+  .input-container{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .error{
+    text-align: center;
+  }
+
+  label{
+    margin-bottom: 5px;
+  }
+  
+}
+
+@media(max-width:350px){
+  .error{
+    height: 27px;
+  }
+}
